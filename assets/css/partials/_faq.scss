@@ -1,0 +1,27 @@
+.faq {
+	@include outer-container;
+	padding: 4.5vmax 1em 0;
+	li {
+		list-style-type: none;
+		padding-left: 2em;
+		position: relative;
+		margin-bottom: 1em;
+		&:before {
+			content: "\f067";
+			font-family: "FontAwesome";
+			position: absolute;
+			left: 0;
+			top: 0.5em;
+			font-size: 1.2em;
+		}
+		h2 {
+			cursor: pointer;
+		}
+		p {
+			margin-top: 0.5rem;
+		}
+		&.dropped:before {
+			content: "\f068";
+		}
+	}
+}

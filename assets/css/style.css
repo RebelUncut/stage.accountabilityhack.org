@@ -15,6 +15,11 @@ body {
 a {
   color: #377F90; }
 
+h1.section-header {
+  color: #377F90;
+  text-transform: uppercase;
+  margin-bottom: 1rem; }
+
 header {
   background: white;
   padding: 1em;
@@ -56,6 +61,52 @@ header {
         color: #00B5A1; }
   header a {
     text-decoration: none; }
+
+.footer {
+  background: #293538;
+  padding: 3em 1.618em;
+  width: 100%;
+  margin-top: 4vmax; }
+  .footer .footer-logo {
+    margin-bottom: 2em;
+    text-align: center; }
+    .footer .footer-logo img {
+      height: 3em; }
+  .footer .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1.5em; }
+  .footer ul {
+    flex-basis: 13em;
+    flex-shrink: 0;
+    margin-bottom: 3em;
+    padding: 0; }
+  .footer li {
+    line-height: 1.5em;
+    list-style: none;
+    text-align: center; }
+  .footer li a {
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none; }
+    .footer li a:focus, .footer li a:hover {
+      color: white; }
+  .footer li h3 {
+    color: white;
+    font-size: 1em;
+    margin-bottom: 0.4em;
+    font-weight: normal; }
+  .footer hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0 auto 1.5em;
+    width: 12em; }
+  .footer p {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: auto;
+    max-width: 35em;
+    text-align: center; }
 
 .hero {
   background: linear-gradient(to bottom, rgba(55, 127, 144, 0.75), rgba(55, 127, 144, 0.75)), url("/img/hero-image.jpg");
@@ -111,5 +162,33 @@ header {
           background: #d6cf20; }
         .hero .buttons a.focus:active {
           background: #a9a41a; }
+
+.faq {
+  max-width: 78rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4.5vmax 1em 0; }
+  .faq::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .faq li {
+    list-style-type: none;
+    padding-left: 2em;
+    position: relative;
+    margin-bottom: 1em; }
+    .faq li:before {
+      content: "\f067";
+      font-family: "FontAwesome";
+      position: absolute;
+      left: 0;
+      top: 0.5em;
+      font-size: 1.2em; }
+    .faq li h2 {
+      cursor: pointer; }
+    .faq li p {
+      margin-top: 0.5rem; }
+    .faq li.dropped:before {
+      content: "\f068"; }
 
 /*# sourceMappingURL=style.css.map */
