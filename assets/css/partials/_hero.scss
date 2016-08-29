@@ -1,0 +1,41 @@
+.hero {
+	background: linear-gradient(
+		to bottom, 
+		rgba($color-primary, 0.75),
+		rgba($color-primary, 0.75)), 
+		url("/img/hero-image.jpg");
+	background-size: cover;
+	background-position: center bottom;
+	width: 100%;
+	color: white;
+	padding: 6vmax 0;
+	.wrapper {
+		@include outer-container;
+		padding: 0 1em;
+	}
+	h1, h2, h3 {
+		margin-bottom: 1rem;
+		line-height: 1.5;
+	}
+	h1 {
+		font-size: 3vmax;
+		line-height: 1.25;
+		text-transform: uppercase;
+	}
+	h2, h3 {
+		font-weight: normal;
+	}
+	h3 {
+		margin-bottom: 0;
+		font-size: 1.5em;
+	}
+	.buttons {
+		margin-top: 1.5em;
+		a {
+			@include button($color-primary, white);
+			&.focus {
+				@include button($color-type, $color-secondary);
+			}
+		}
+	}
+}

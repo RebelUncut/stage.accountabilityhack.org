@@ -1,0 +1,115 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "brandon-grotesque", sans-serif; }
+
+a {
+  color: #377F90; }
+
+header {
+  background: white;
+  padding: 1em;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  display: fixed; }
+  header .wrapper {
+    max-width: 78rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1em; }
+    header .wrapper::after {
+      clear: both;
+      content: "";
+      display: block; }
+  header nav {
+    display: flex;
+    flex-direction: row; }
+  header a.brand img {
+    height: 4rem;
+    margin-right: 1em; }
+  header ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    header ul .top {
+      display: flex;
+      flex-dirction: row; }
+      header ul .top a {
+        text-transform: uppercase;
+        font-weight: bold; }
+    header ul li {
+      list-style-type: none;
+      margin-left: 1em; }
+    header ul .bottom {
+      margin-bottom: 0.125em;
+      margin-top: 0.25em; }
+      header ul .bottom a {
+        color: #00B5A1; }
+  header a {
+    text-decoration: none; }
+
+.hero {
+  background: linear-gradient(to bottom, rgba(55, 127, 144, 0.75), rgba(55, 127, 144, 0.75)), url("/img/hero-image.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  width: 100%;
+  color: white;
+  padding: 6vmax 0; }
+  .hero .wrapper {
+    max-width: 78rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1em; }
+    .hero .wrapper::after {
+      clear: both;
+      content: "";
+      display: block; }
+  .hero h1, .hero h2, .hero h3 {
+    margin-bottom: 1rem;
+    line-height: 1.5; }
+  .hero h1 {
+    font-size: 3vmax;
+    line-height: 1.25;
+    text-transform: uppercase; }
+  .hero h2, .hero h3 {
+    font-weight: normal; }
+  .hero h3 {
+    margin-bottom: 0;
+    font-size: 1.5em; }
+  .hero .buttons {
+    margin-top: 1.5em; }
+    .hero .buttons a {
+      display: inline-block;
+      background: white;
+      color: #377F90;
+      text-decoration: none;
+      margin-right: 1em;
+      padding: 0.5em 1em;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25); }
+      .hero .buttons a:hover {
+        background: #e6e6e6; }
+      .hero .buttons a:active {
+        background: #cccccc; }
+      .hero .buttons a.focus {
+        display: inline-block;
+        background: #E3DD46;
+        color: #59595B;
+        text-decoration: none;
+        margin-right: 1em;
+        padding: 0.5em 1em;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25); }
+        .hero .buttons a.focus:hover {
+          background: #d6cf20; }
+        .hero .buttons a.focus:active {
+          background: #a9a41a; }
+
+/*# sourceMappingURL=style.css.map */
