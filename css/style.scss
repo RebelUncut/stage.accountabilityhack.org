@@ -1,9 +1,13 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
+
 @import "vars";
 @import "base";
 
 @import "partials/header";
 @import "partials/footer";
+
 @import "partials/hero";
 @import "partials/faq";
+@import "partials/aims";
+@import "partials/events"; 
